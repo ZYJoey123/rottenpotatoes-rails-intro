@@ -51,7 +51,7 @@ class MoviesController < ApplicationController
     elsif @sort_by
       @movies = Movie.order(@sort_by)
     else
-      @movie = Movie.all
+      @movies = Movie.all
     end
     if !@ratings
       @ratings = Hash.new
